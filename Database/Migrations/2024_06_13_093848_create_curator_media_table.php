@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
 use Modules\MediaCurator\Models\CuratorMedia;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
@@ -40,10 +39,5 @@ return new class() extends XotBaseMigration {
                 $this->updateTimestamps($table, true);
             }
         );
-    }
-
-    public function down(): void
-    {
-        Schema::dropIfExists(app(config('curator.model'))->getTable());
     }
 };
