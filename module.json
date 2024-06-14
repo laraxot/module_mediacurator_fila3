@@ -1,0 +1,11 @@
+{
+    "name": "MediaCurator",
+    "alias": "mediacurator",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MediaCurator\\Providers\\MediaCuratorServiceProvider"
+    ],
+    "files": []
+}
